@@ -51,15 +51,15 @@ h1{
 }
 
 input{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     align: middle;
 }
 
 input[type="text"], input[type="password"]{
     border : none;
     border-bottom: 2px solid;
-    color :#13bff1;
+    color :#0173bc;
     border-color :#13bff1;
     outline : none;
     background: transparent;
@@ -84,7 +84,25 @@ a{
     text-decoration: none;
     color: #0173bc;
 }
-input[type="text"]:focus, input[type="password"]:focus{
+input:focus{
     border-color : #0173bc;
     width: 200px;
+}
+.inputbox{
+    position: relative;
+}
+.main .inputbox label{
+    position: absolute;
+    top : 0;
+    left : 0;
+    color: #13bff1;
+    pointer-events: none;
+    transition: 0.25s;
+    font-size: 16px;
+}
+
+.main .inputbox input:focus ~ label{
+    top : -9px;
+    font-size: 13px;
+    color: #0173bc;
 }
