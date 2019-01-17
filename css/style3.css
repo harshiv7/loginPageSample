@@ -1,0 +1,72 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    background: #000;
+   
+}
+
+#box{
+    height: 200px;
+    width: 1000px;
+    background-color: aquamarine; 
+    border-radius: 4px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main{
+    height: 400px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+    position:absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+}
+
+#loginform, #signup{
+    position:absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 2;  
+
+}
+#signup{
+    top: 45%;
+    left: 75%;
+    visibility: hidden;
+}
+#loginform h1{
+
+}
+
+#loginform input{
+
+}
+
+#loginform button{
+
+}
+
+#signup h1{
+
+}
+
+#signup input{
+
+}
+
+#signup button{
+    
+}
