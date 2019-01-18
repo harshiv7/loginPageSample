@@ -6,19 +6,20 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
-    background: #000;
+    background: #ededed;
    
 }
 
 #box{
     height: 200px;
     width: 1000px;
-    background-color: aquamarine; 
+    background-color: #512DA8; 
     border-radius: 4px;
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #main{
@@ -30,7 +31,8 @@ body{
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index:99;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -39,7 +41,7 @@ body{
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
-    z-index: 2;  
+    z-index: 999999999;  
 
 }
 #signup{
@@ -47,26 +49,35 @@ body{
     left: 75%;
     visibility: hidden;
 }
-#loginform h1{
-
+#loginform h1, #signup h1{
+    color: #512DA8;
+    font-size: 3em;
 }
 
-#loginform input{
-
+#loginform input,#signup input{
+    display: block;
+    margin: 30px 0px 30px 0px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #512DA8;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
+    color: #512DA8;
+    font-size: 1em;
+    font-weight: bold;
 }
 
-#loginform button{
-
+#loginform button,#signup button{
+    padding: 8px 10px 8px 10px ;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    width: 120px;
+    background-color: #512DA8;
+    border: none;
+    color: #fff;
+    margin-top: 7%;;
 }
-
-#signup h1{
-
-}
-
-#signup input{
-
-}
-
-#signup button{
-    
-}
+ ::placeholder{
+    color: rgba(82, 44, 169,0.5);
+ }
